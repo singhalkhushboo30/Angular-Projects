@@ -1,0 +1,39 @@
+<div class="seller">
+
+    <!--Sign Up-->
+    <div  *ngIf="!showLogin" class="sign-up">
+        <h1>Sign Up</h1>
+        <div *ngIf="signUpMessage" class="seller message">{{message}}</div>
+        <form #signUp="ngForm" (ngSubmit)="userSignUp(signUp.value)" class="common-form" >
+            <label>Enter name</label>
+            <input class="form-input" name="username" required type="text" placeholder="name" ngModel>
+            <label>Enter email address</label>
+            <input class="form-input" name="email" type="string" #email="ngModel" placeholder="youremail@gmail.com" email required ngModel>
+            <p class="validation"><span *ngIf="email.invalid && email.touched">Please enter valid email</span></p>
+            <label>Enter password</label>
+            <input class="form-input"  name="password" type="password" #password="ngModel" placeholder="***********" required ngModel>
+            <p class="validation"><span *ngIf="password.invalid && password.touched">Please enter valid password</span></p>
+            <!-- <button class="form-button">SignUp</button> -->
+            <button [disabled]="signUp.invalid" class="form-button">SignUp</button>
+            <p class="toggle">Already have account?<a class="auth-toggle-link" (click)="openLogin()">Click to login! </a> </p>
+        </form>
+    </div>
+    
+    <!--Login-->
+    <div *ngIf="showLogin" class="sign-up">
+        <h1>Login</h1>
+        <form #login="ngForm" (ngSubmit)="userLogin(login.value)" class="common-form" >
+           <p class="error" *ngIf="invalidLogin">{{message}}</p>
+            <label>Enter email address</label>
+            <input class="form-input" name="email" type="string" #email="ngModel" placeholder="youremail@gmail.com" email required ngModel>
+            <p class="validation"><span *ngIf="email.invalid && email.touched">Please enter valid email</span></p>
+            <label>Enter password</label>
+            <input class="form-input"  name="password" #password="ngModel" type="password" placeholder="***********" required ngModel>
+            <p class="validation"><span *ngIf="password.invalid && password.touched">Please enter valid password</span></p>
+            <!-- <button class="form-button">Login</button> -->
+            <button [disabled]="login.invalid" class="form-button">Login</button>
+            <p class="toggle">Don't have account? <a class="auth-toggle-link" (click)="openSignUp()">Click to signUp!</a></p>
+        </form>
+    </div>
+   
+</div>

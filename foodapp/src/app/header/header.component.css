@@ -1,0 +1,14 @@
+nav{
+    font-family: sans-serif;
+    display:flex;
+    justify-content: space-between;
+}
+.nav h1{
+    color:blueviolet;
+
+}
+.nav ul{}
+.container{
+    margin-left: 5px;
+    margin-right: 5px;
+}

@@ -1,0 +1,123 @@
+
+.container{ 
+    height:90%;
+    width:350px;
+    background-color:#4C52AD;
+    border-radius:20px;
+    box-shadow:10px 10px 10px var(--shadow-dark);
+}
+
+.upper-data{
+    position:relative;
+    overflow:hidden;
+    width:100%;
+    height:50%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+.lower-data{
+    height:50%;
+    width:100%;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    padding:5px;
+    display:flex;
+    flex-direction:column;
+   
+}
+.upper-data img{
+   position:absolute;
+    top:0px;
+    left:0;
+    height:100%;
+    width:100%;
+}
+
+.weather-data{ 
+    position:relative;
+    z-index:1;
+     width:100%;
+     height:100%;
+     flex-direction:column;
+     background-color:rgba(0,0,0,0.3);
+     display:flex;
+     justify-content: center;
+     align-items:center;
+}
+.location{
+    color:white;
+    text-align:center;
+    font-size:1.2em;
+}
+.temperature{
+    color:white;
+    font-size:4em;
+    text-align:center;
+    font-weight:900;
+}
+
+.info-block-label img{
+    height:20px;
+    width:20px;
+
+}
+.more-info-label{
+    color:white;
+}
+.more-info-container{
+    flex:1;
+    background-color:rgba(255,255,255,0.1);
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    margin-top:1em;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+    flex-wrap:wrap;
+
+}
+.info-block{
+    width:50%;
+    display:flex;
+    flex-direction:row;
+}
+.info-block-label{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.info-block-label span{
+    color:white;
+    font-size:12px;
+}
+.info-block-value{
+    width:50%;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    color:white;
+}
+.search{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+.style-search{
+    height: 15%;
+    width:100%;
+    padding:4px;
+    margin-top:15px;
+    margin-bottom:15px;
+    background-color:rgb(85, 24, 132);
+    color:white;
+    display:flex;
+    border-radius:10px;
+    text-align:center;
+    border-color: none;
+}

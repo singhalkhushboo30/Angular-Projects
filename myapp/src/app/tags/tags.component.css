@@ -1,0 +1,13 @@
+div{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+div a{
+    background-color: bisque;
+    margin:.2rem;
+    padding:.3rem 1rem;
+    border-radius:5rem;
+    font-weight:bold;
+}

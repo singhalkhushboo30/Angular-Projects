@@ -1,0 +1,12 @@
+package com.restapi.exception;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+
+@ControllerAdvice
+public class CloudVendorExceptionHandler {
+
+	public ResponseEntity<Object> handleCloudVendorNotFoundException(CloudVendorNotFoundException){
+		
+	}
+}

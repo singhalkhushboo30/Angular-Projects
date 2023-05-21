@@ -1,0 +1,42 @@
+.common-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto; 
+  }
+  .form{
+    margin-top: 80px;
+  }
+  .checkout h3{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+  .form-input {
+    height: 35px;
+    margin-bottom: 20px;
+    border: 1px solid blueviolet;
+    padding-left: 15px;
+    color: blueviolet;
+  } 
+  label{
+    color:blueviolet;
+    font-weight: bold;
+  }
+  .form-button{
+    height:30px;
+    border:2px solid blueviolet;
+    color:blueviolet;
+    cursor:pointer;
+}
+  h3,h1{
+    color:blueviolet;
+  }
+  .row{
+    text-align: center;
+  }
+  .checkout h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }

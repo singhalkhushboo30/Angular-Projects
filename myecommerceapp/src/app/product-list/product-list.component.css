@@ -1,0 +1,30 @@
+table{
+    text-align:left;
+    color:blueviolet;
+    border-collapse:collapse;
+}
+table td,table th{
+    border:1px solid blueviolet;
+    padding:10px;
+    min-height:160px;
+}
+img{
+    width:100px;
+    height:100px;
+}
+/* .delete-icon{
+    display:flex;
+    flex-direction:row; 
+    justify-content:center;
+} */
+.edit-icon{
+    margin-left:10px;
+    color:blueviolet;
+}
+.productDelete-message{
+    margin-top:15px;
+    margin-bottom:10px;
+    text-align:left;
+    color:green;
+    font-size:14px;
+  }

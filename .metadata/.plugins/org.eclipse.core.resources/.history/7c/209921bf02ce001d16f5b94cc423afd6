@@ -1,0 +1,17 @@
+package com.restapi.exception;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+
+public class CloudVendorExceptionHandler {
+
+	public ResponseEntity<Object> handleCloudVendorNotFoundException(CloudVendorNotFoundException cloudVendorNotFoundException){
+		CloudVendorException cloudVendorException=new 
+				CloudVendorException(
+						cloudVendorNotFoundException.getMessage();
+						cloudVendorNotFoundException.getCause();
+						HttpStatus.NOT_FOUND;
+						);
+		return new ResponseEntity<>(cloudVendorException,HttpStatus.NOT_FOUND);
+	}
+}

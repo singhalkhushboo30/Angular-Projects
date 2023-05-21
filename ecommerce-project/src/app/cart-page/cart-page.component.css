@@ -1,0 +1,60 @@
+.form-button {
+    height: 35px;
+    border: 1px solid blueviolet;
+    color: blueviolet;
+    cursor: pointer;
+  }
+  h1{
+    color:blueviolet;
+  }
+  .cart-page h1{
+    text-align:center;
+  }
+  .details{
+    border:1px solid #ddd;
+  }
+  .details img{
+        height:100px;
+  }
+  .cart-page{
+       margin-top:40px;
+       margin-bottom:40px;
+  }
+  ul{
+    list-style-type: none;
+  }
+  .details ul{
+    padding:0px;
+    margin:0px;
+    align-items:center;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+  }
+  .summary h3{
+    text-align: center;
+}
+h3{
+    color:blueviolet;
+}
+.summary{
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.summary h3{
+    text-align: center;
+}
+.summary ul {
+    border: 1px solid #ddd;
+    list-style-type: none;
+    padding: 15px;
+}
+.summary ul li{
+    display: flex;
+    justify-content: space-between;
+}
+.max-width{
+  width:100%;
+}

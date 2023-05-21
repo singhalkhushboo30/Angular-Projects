@@ -1,0 +1,102 @@
+<div class="search">
+  <form #form="ngForm" (submit)="onSubmit()">
+    <input class="style-search" type="text" placeholder="Search City" name="city" [(ngModel)]="cityName">
+  </form>
+</div> 
+
+<div class="container" *ngIf="weatherdata">
+  <div class="upper-data">
+    <img src="../assets/day.jfif" alt="warm" *ngIf="weatherdata.current.temp_c>15" >
+    <img src="../assets/night.jfif" alt="cold" *ngIf="weatherdata.current.temp_c<=15"> 
+    <div class="weather-data">
+      <div class="location">{{weatherdata.location.name}}</div>
+      <div class="temperature">{{weatherdata.current.temp_c | number:'1.0-0'}}&nbsp;&deg;C</div>
+    </div>
+  </div>
+  
+  <div class="lower-data">
+    <div class="more-info-label">
+      More Information
+    </div>
+    <div class="more-info-container">
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/min.jfif">
+          <span>temp in &deg;C</span>
+        </div>
+         <div class="info-block-value">{{weatherdata.current.temp_c}}&deg;C</div>
+      </div>
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/max.jfif">
+          <span>temp in &deg;F</span>
+        </div>
+         <div class="info-block-value">{{weatherdata.current.temp_f}}&deg;F</div>
+      </div>
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/.jfif">
+          <span>humidity</span>
+        </div>
+         <div class="info-block-value">{{weatherdata.current.humidity}}%</div>
+      </div>
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/wind.jfif">
+          <span>wind</span>
+        </div>
+         <div class="info-block-value">{{weatherdata.current.wind_kph}}km/h</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container">
+  <div class="upper-data">
+    <img src="../assets/day.jfif" alt="warm" *ngIf="14>15" >
+    <img src="../assets/night.jfif" alt="cold" *ngIf="14<=15"> 
+    <div class="weather-data">
+      <div class="location">London</div>
+      <div class="temperature">{{14.40|number:'1.0-0'}}&nbsp;&deg;C</div>
+    </div>
+  </div>
+  
+  <div class="lower-data">
+    <div class="more-info-label">
+      More Information
+    </div>
+    <div class="more-info-container">
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/min.jfif">
+          <span>min</span>
+        </div>
+         <div class="info-block-value">10&deg;C</div>
+      </div>
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/max.jfif">
+          <span>max</span>
+        </div>
+         <div class="info-block-value">28&deg;C</div>
+      </div>
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/.jfif">
+          <span>humidity</span>
+        </div>
+         <div class="info-block-value">10&deg;C</div>
+      </div>
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/wind.jfif">
+          <span>wind</span>
+        </div>
+         <div class="info-block-value">10&deg;C</div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<router-outlet></router-outlet>
